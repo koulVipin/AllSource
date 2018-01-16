@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PurchaseOrderData" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="PurchaseOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="OrderDate" type="xs:string" minOccurs="1" msdata:Ordinal="0" />
+        <xs:element name="CompanyAddress" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CompanyName" type="xs:string" minOccurs="1" msdata:Ordinal="0" />
+              <xs:element name="StreetAddress" type="xs:string" minOccurs="1" msdata:Ordinal="1" />
+              <xs:element name="City" type="xs:string" minOccurs="1" msdata:Ordinal="2" />
+              <xs:element name="State" type="xs:string" minOccurs="1" msdata:Ordinal="3" />
+              <xs:element name="ZipCode" type="xs:string" minOccurs="1" msdata:Ordinal="4" />
+            </xs:sequence>
+            <xs:attribute name="class" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CustomerAddress" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CompanyName" type="xs:string" minOccurs="1" msdata:Ordinal="0" />
+              <xs:element name="StreetAddress" type="xs:string" minOccurs="1" msdata:Ordinal="1" />
+              <xs:element name="City" type="xs:string" minOccurs="1" msdata:Ordinal="2" />
+              <xs:element name="State" type="xs:string" minOccurs="1" msdata:Ordinal="3" />
+              <xs:element name="ZipCode" type="xs:string" minOccurs="1" msdata:Ordinal="4" />
+            </xs:sequence>
+            <xs:attribute name="class" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Items" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Item" minOccurs="1" maxOccurs="1">
+                <xs:complexType>
+                  <xs:attribute name="ItemId" type="xs:string" />
+                  <xs:attribute name="ItemName" type="xs:string" />
+                  <xs:attribute name="Quantity" type="xs:string" />
+                  <xs:attribute name="ItemCost" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="OrderId" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PurchaseOrderData" >
+    <xs:complexType>
+      <xs:choice minOccurs="1" maxOccurs="1">
+        <xs:element ref="PurchaseOrder" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

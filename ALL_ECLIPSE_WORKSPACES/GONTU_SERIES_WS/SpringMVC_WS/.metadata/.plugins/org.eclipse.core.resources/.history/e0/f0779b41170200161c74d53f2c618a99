@@ -1,0 +1,12 @@
+package com.gontuseries.util;
+
+import org.springframework.stereotype.Component;
+
+@Component(value="simpleUtil")
+public class SimpleUtilImpl implements SimpleUtil {
+
+	@Override
+	public void add(int a, int b) {
+		System.out.println("The sum is --> " + (a+b));
+	}
+}

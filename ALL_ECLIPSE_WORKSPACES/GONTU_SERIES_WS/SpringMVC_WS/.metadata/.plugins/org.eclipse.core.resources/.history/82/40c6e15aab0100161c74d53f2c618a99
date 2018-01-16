@@ -1,0 +1,49 @@
+package com.gontuseries.hellocontroller;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.AbstractController;
+
+import com.gontuseries.util.SimpleUtil;
+ 
+public class HelloController extends AbstractController{
+ 
+	//@Autowired(required=true)
+	private SimpleUtil simpleUtil;
+	
+	public HelloController() {
+		
+	}
+	
+	public HelloController(SimpleUtil simpleUtil) {
+		this.simpleUtil = simpleUtil;
+	}
+	
+	
+	public SimpleUtil getSimpleUtil() {
+		return simpleUtil;
+	}
+
+	@Resource(name = "simpleUtilImpl")
+	public void setSimpleUtil(SimpleUtil simpleUtil) {
+		this.simpleUtil = simpleUtil;
+	}
+
+	@Override
+	protected ModelAndView handleRequestInternal(HttpServletRequest request,
+		HttpServletResponse response) throws Exception {
+ 
+		System.out.println("calling the method add(a,b) ");
+		
+		simpleUtil.add(2, 3);
+		
+		ModelAndView modelandview = new ModelAndView("HelloPage");
+		modelandview.addObject("welcomeMessage", "Hi User, welcome to the first Spring MVC Application");
+		
+		return modelandview;
+	}
+}

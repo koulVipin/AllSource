@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="in.vevaan.simple.impl.SimpleImpl"/>
+<fullyQualifiedTypeName name="com.specification.simple.Specification"/>
+<fullyQualifiedTypeName name="com.specification.simple.SimpleTasks"/>
+<fullyQualifiedTypeName name="com.specification.common.CommonTasks"/>
+<fullyQualifiedTypeName name="in.vevaan.common.impl.CommomImpl"/>
+<fullyQualifiedTypeName name="com.vipin.point.Point"/>
+<fullyQualifiedTypeName name="com.vipin.centr.Center"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="com.vipin.cir.Circle"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.xerces.internal.util.SynchronizedSymbolTable"/>
+<fullyQualifiedTypeName name="javax.annotation.Resource"/>
+</qualifiedTypeNameHistroy>

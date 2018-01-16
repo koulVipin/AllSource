@@ -1,0 +1,14 @@
+package com.vipin.main;
+
+public class MainDebugApp {
+
+	public static void main(String[] args) throws InterruptedException {
+		System.out.println("This is the first line of execution");
+		
+		for(;;) {
+			Thread.sleep(5000);
+			System.out.println("Inside Infinite loop");
+		}
+
+	}
+}

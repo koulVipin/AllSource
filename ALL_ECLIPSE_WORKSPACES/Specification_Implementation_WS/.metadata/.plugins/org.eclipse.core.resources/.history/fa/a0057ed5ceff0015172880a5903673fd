@@ -1,0 +1,6 @@
+package com.specification;
+
+public interface Specification {
+
+	public print();
+}

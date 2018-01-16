@@ -1,0 +1,28 @@
+package com.vipin.cir;
+
+import javax.annotation.Resource;
+
+import com.vipin.centr.Center;
+
+public class Circle {
+
+	//@Resource(name = "center")
+	private Center center;
+	
+	public Circle() {
+		
+	}
+
+	public Circle(Center center) {
+		this.center = center;
+	}
+	
+	public Center getCenter() {
+		return center;
+	}
+
+	@Resource(name = "center")
+	public void setCenter(Center center) {
+		this.center = center;
+	}
+}

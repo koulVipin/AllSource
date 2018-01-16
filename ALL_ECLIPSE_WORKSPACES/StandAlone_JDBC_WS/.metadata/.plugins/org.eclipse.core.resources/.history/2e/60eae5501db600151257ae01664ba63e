@@ -1,0 +1,10 @@
+package com.vipin.main;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		
+		final String JDBC_DRIVER = "org.h2.Driver";
+	}
+
+}

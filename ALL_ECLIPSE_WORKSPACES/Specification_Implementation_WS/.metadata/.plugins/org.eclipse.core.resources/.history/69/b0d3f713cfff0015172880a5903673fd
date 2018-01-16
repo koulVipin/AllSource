@@ -1,0 +1,5 @@
+package com.specification.common;
+
+public interface CommonTasks {
+
+}

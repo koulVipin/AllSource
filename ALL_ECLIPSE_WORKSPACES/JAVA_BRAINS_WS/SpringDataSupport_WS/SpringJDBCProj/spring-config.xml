@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+        
+    <context:annotation-config /> <!-- This enables the annotation's actions, else annotations don't do their work. -->
+    
+    <context:component-scan base-package="com.vipin.dao.jdbc.impl"/> <!-- This is for component scan -->
+    
+    <bean id="jdbcOperImpl" class="com.vipin.dao.jdbc.impl.JdbcOperImpl"/>
+    
+    <!-- The implementation class from spring for DataSource interface, can be used out-of-the-box -->
+    <!-- <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+    	<property name="driverClassName" value="org.h2.Driver"/>
+    	<property name="url" value="jdbc:h2:tcp://localhost/~/test"/>
+    	<property name="username" value="sa"/>
+    	<property name="password" value=""/>
+    </bean> -->
+         
+    <!-- The Apache DBCP implementation of DataSource -->
+    <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
+    	<property name="driverClassName" value="org.h2.Driver"/>
+    	<property name="url" value="jdbc:h2:tcp://localhost/~/test"/>
+    	<property name="username" value="sa"/>
+    	<property name="password" value=""/>
+    </bean>
+    
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+    	<property name="dataSource" ref="dataSource"/>
+    </bean>
+    
+    <!-- This is not working, how to define this as a bean? -->
+    <!-- <bean id="namedParameterJdbcTemplate" class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate">
+    	<property name="dataSource" ref="dataSource"/>
+    </bean> -->
+    
+</beans>

@@ -1,0 +1,17 @@
+package com.vipin.exception;
+
+public class ChainedExceptionsDemo {
+
+	
+	public static void main(String s[]) {
+		
+		int a = 0;
+		
+		try {
+			if (a==0) {
+				throw new Exception();
+			}
+		}
+		
+	}
+}

@@ -1,0 +1,14 @@
+package com.vipin.main;
+
+public class MainDebugApp {
+
+	public static void main(String[] args) {
+		System.out.println("This is the first line of execution");
+		
+		for(;;) {
+			System.sleep(3000);
+		}
+
+	}
+
+}

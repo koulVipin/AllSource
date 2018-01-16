@@ -1,0 +1,15 @@
+package com.vevaan.main;
+
+import com.sample.specification.*;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		
+
+		SampleSpecificationInterface ssi = null;
+		
+		
+	}
+
+}

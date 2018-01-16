@@ -1,0 +1,7 @@
+INDEX VERSION 1.3+C:\AllTechStuff\ALL_ECLIPSE_WORKSPACES\REMOTE_DEBUG_WS\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1419882891.index
+1590683082.index
+2131112941.index
+618062371.index
+4090956339.index
+3229274814.index

@@ -1,0 +1,8 @@
+package com.gontuseries.util;
+
+public class SimpleUtil {
+	
+	public void add(int a, int b) {
+		System.out.println("The addition is " +(a+b));
+	}
+}

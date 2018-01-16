@@ -1,0 +1,8 @@
+package com.vipin.centr;
+
+import com.vipin.point.Point;
+
+public class Center {
+
+	private Point point;
+}

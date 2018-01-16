@@ -1,0 +1,37 @@
+package com.vipin.service;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.vipin.entity.UserID;
+import com.vipin.entity.UserInfo;
+
+public class ServiceMethods {
+
+	private static SessionFactory sf = null;
+	
+	public ServiceMethods() {
+		sf = new Configuration().configure().buildSessionFactory(); // This will read the hibernate.cfg.xml file
+	}
+	
+	public void saveUser(UserInfo userInfo) {
+		Session session = null;
+		session = sf.openSession();
+		session.beginTransaction();
+		//session.save(user.getVeh());  // Is this needed? - it has relationship with the cascade attribute 
+		session.save(userInfo);
+		session.getTransaction().commit();
+		session.close();
+	}
+	
+	public UserInfo getUser(UserID userID) {
+		
+		Session session = null;
+		session = sf.openSession();
+		
+		UserInfo userInfo = session.get(UserInfo.class, userID);  // UserID is Object, which is now a primary-key
+		sf.close();
+		return userInfo;
+	}
+}

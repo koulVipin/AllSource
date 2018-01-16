@@ -1,0 +1,1 @@
+INDEX VERSION 1.127+C:\AllTechStuff\ALL_ECLIPSE_WORKSPACES\SERVLET_JNDI_PROJ\.metadata\.plugins\org.eclipse.jdt.core

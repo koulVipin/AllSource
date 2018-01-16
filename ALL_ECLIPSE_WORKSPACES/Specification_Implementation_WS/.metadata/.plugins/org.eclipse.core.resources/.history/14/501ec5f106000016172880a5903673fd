@@ -1,0 +1,6 @@
+package snippet;
+
+public class Snippet {
+	ApplicationContext context = new ClassPathXmlApplicationContext("spring-bean-config.xml");
+}
+

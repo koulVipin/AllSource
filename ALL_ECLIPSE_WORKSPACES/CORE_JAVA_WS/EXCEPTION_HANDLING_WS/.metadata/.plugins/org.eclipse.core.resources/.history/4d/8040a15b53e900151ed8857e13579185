@@ -1,0 +1,45 @@
+package com.vipin.exception;
+
+public class FinalizeProg {
+
+	public static void main(String s[]) {
+
+		FinalizeProg f = new FinalizeProg();
+		f.print();
+		
+		System.out.println(10/0);
+		
+		System ss = null;;
+		
+		ss.toString();
+		
+		
+		int a = 0;
+		
+		if(a==0) {
+			try {
+				throw new MyException1();
+			} catch (MyException1 e) {
+				e.printStackTrace();
+			}
+		}
+		throw new MyException();	
+		
+	}
+	
+	public void print() {
+		System.out.println("Test");
+	}
+}
+
+class MyException extends RuntimeException {
+
+	private static final long serialVersionUID = 1L;
+	
+}
+
+class MyException1 extends Exception {
+
+	private static final long serialVersionUID = 1L;
+	
+}

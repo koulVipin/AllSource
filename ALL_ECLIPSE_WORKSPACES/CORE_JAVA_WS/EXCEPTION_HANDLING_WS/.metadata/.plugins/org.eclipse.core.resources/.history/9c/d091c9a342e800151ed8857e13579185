@@ -1,0 +1,17 @@
+package com.vipin.exception;
+
+import java.io.PrintWriter;
+
+public class ExcepLearningProg1 {
+
+	public static void main(String[] args) throws Exception{
+		
+		PrintWriter pw = new PrintWriter("test.txt");
+		
+		pw.println("hello");
+		
+		pw.close();
+
+	}
+
+}

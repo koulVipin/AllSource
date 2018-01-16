@@ -1,0 +1,20 @@
+package com.vipin.exception;
+
+public class FinalConcepts {
+	
+	public static void main(String s[]) {
+		
+		System.out.println("Value of a is " +a);
+		
+	}
+
+}
+
+
+class Test {
+	
+	Test() {
+		a = 10;
+	}
+	final int a;
+}

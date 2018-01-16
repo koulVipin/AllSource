@@ -1,0 +1,2 @@
+INDEX VERSION 1.127+C:\AllTechStuff\ALL_ECLIPSE_WORKSPACES\REMOTE_DEBUG_WS\.metadata\.plugins\org.eclipse.jdt.core
+3229274814.index

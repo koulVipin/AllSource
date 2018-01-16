@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/springJars"/>
+	<classpathentry kind="lib" path="C:/AllTechStuff/commons-dbcp2-2.1.1-bin/commons-dbcp2-2.1.1/commons-dbcp2-2.1.1.jar" sourcepath="C:/AllTechStuff/ALL_SOURCE_CODES_OF_VARIOUS_SOFTWARES/SOURCES_EXTRACTED/commons-dbcp2-2.1.1-src/commons-dbcp2-2.1.1-src"/>
+	<classpathentry kind="lib" path="C:/AllTechStuff/commons-pool2-2.4.2-bin/commons-pool2-2.4.2/commons-pool2-2.4.2.jar" sourcepath="C:/AllTechStuff/ALL_SOURCE_CODES_OF_VARIOUS_SOFTWARES/SOURCES_EXTRACTED/commons-pool2-2.4.2-src/commons-pool2-2.4.2-src"/>
+	<classpathentry kind="lib" path="C:/AllTechStuff/H2Database/h2-2015-10-11/h2/bin/h2-1.4.190.jar" sourcepath="C:/AllTechStuff/H2Database/h2-2015-10-11/h2/src"/>
+	<classpathentry kind="lib" path="C:/Users/vipin.koul/Desktop/JarsForProjects/SpringJars/spring-tx-4.2.4.RELEASE.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

@@ -1,0 +1,13 @@
+package com.vipin.exception;
+
+public class ChainedExceptionsDemo {
+
+	
+	public static void main(String s[]) {
+		
+		
+		if (a==0) {
+			
+		}
+	}
+}

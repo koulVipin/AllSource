@@ -1,0 +1,9 @@
+package com.vipin.mainapp;
+
+public class MainApp {
+
+	
+	pubic static void main(String s[]) {
+		
+	}
+}

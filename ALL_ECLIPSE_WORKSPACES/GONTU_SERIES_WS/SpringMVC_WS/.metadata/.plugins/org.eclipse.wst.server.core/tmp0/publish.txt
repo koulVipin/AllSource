@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Sun Apr 17 12:09:20 IST 2016
+org.eclipse.jst.jee.server\:FirstSpringMVCProject=C\:\\AllTechStuff\\APACHE_TOMCAT\\apache-tomcat-7.0.65\\apache-tomcat-7.0.65\\wtpwebapps\\FirstSpringMVCProject
+org.eclipse.jst.jee.server\:ServletFilterProj=C\:\\AllTechStuff\\APACHE_TOMCAT\\apache-tomcat-7.0.65\\apache-tomcat-7.0.65\\wtpwebapps\\ServletFilterProj

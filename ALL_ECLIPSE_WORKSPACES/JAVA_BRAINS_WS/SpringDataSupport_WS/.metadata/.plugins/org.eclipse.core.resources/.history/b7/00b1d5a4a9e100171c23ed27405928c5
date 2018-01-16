@@ -1,0 +1,23 @@
+package com.vipin;
+
+import java.util.LinkedList;
+
+public class LinkedListDemo {
+	
+	public static void main(String[] args) {
+		
+		LinkedList<Integer> lle = new LinkedList<>();
+		
+		lle.add(new Integer(2));
+		
+		lle.addFirst(new Integer(1));
+		
+		lle.addLast(new Integer(3));
+		
+		System.out.println(lle);
+		
+		lle.removeFirst();
+		System.out.println(lle);
+	}
+
+}

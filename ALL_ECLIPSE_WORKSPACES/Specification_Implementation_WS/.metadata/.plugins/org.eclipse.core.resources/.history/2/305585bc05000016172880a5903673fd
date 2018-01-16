@@ -1,0 +1,6 @@
+package com.vipin.centr;
+
+public class Center {
+
+	private Point point;
+}

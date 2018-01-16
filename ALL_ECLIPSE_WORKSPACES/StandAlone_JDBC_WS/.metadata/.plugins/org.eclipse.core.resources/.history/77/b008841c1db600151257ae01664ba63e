@@ -1,0 +1,10 @@
+package com.vipin.main;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		
+		String DB_URL = "jdbc:h2:tcp://localhost:9092/~/test";
+	}
+
+}

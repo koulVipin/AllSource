@@ -1,0 +1,21 @@
+package com.vipin.exception;
+
+public class FinalizeProg {
+
+	public static void main(String s[]) {
+
+		FinalizeProg f = new FinalizeProg();
+		f.print();
+		
+		throw new String();
+	}
+	
+	public void print() {
+		System.out.println("Test");
+	}
+}
+
+
+class MyException extends RuntimeException {
+	
+}

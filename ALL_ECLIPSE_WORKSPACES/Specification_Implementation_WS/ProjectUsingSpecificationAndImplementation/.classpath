@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_77"/>
+	<classpathentry kind="lib" path="C:/Users/vipin.koul/Desktop/specificaitonasinterfaces.jar"/>
+	<classpathentry kind="lib" path="C:/Users/vipin.koul/Desktop/specificationimpl1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/vipin.koul/Desktop/SpringJarMin/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/vipin.koul/Desktop/SpringJarMin/commons-logging-api-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/vipin.koul/Desktop/SpringJarMin/spring-beans-4.2.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/vipin.koul/Desktop/SpringJarMin/spring-context-4.2.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/vipin.koul/Desktop/SpringJarMin/spring-context-support-4.2.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/vipin.koul/Desktop/SpringJarMin/spring-core-4.2.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/vipin.koul/Desktop/SpringJarMin/spring-expression-4.2.4.RELEASE.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

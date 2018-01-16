@@ -1,0 +1,23 @@
+package com.vipin;
+
+import java.util.List;
+import java.util.ArrayList;
+
+import java.util.Collections;
+
+public class First {
+
+	public static void main(String s[]) {
+		
+		List<String> listString = new ArrayList<String> ();
+		
+		listString.add("Second");
+		listString.add("Third");
+		listString.add("First");
+		;
+		
+		
+		Collections.sort(listString);
+	}
+	
+}

@@ -1,0 +1,20 @@
+package com.app;
+
+import com.specification.common.CommonTasks;  // The basic interface from the specification
+import com.specification.simple.SimpleTasks;  // The basic interface from the specification
+
+import in.vevaan.common.impl.CommomImpl;    //The class which implements the specification
+import in.vevaan.simple.impl.SimpleImpl;    //The class which implements the specification 
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		
+		SimpleTasks simpleImpl = new SimpleImpl();
+		simpleImpl.print("VIPIN");
+		
+		CommonTasks commonTasks = new CommomImpl();
+		commonTasks.add(3,3);
+		
+	}
+}

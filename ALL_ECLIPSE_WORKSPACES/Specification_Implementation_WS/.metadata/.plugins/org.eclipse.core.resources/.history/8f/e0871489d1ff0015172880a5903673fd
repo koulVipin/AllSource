@@ -1,0 +1,6 @@
+package com.specification.simple;
+
+public interface Specification {
+
+	public void print(String msg);
+}

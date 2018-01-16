@@ -1,0 +1,16 @@
+package com.vipin.exception;
+
+public class FinalConcepts {
+	
+	public FinalConcepts() {
+
+		a = 10;
+	}
+	
+	final int a;
+	
+	public static void main(String s[]) {
+		
+	}
+
+}

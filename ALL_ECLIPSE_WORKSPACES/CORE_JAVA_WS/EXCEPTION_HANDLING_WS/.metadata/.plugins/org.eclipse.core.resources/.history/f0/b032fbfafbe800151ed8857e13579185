@@ -1,0 +1,25 @@
+package com.vipin.exception;
+
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.sql.SQLException;
+
+public class ExcepLearningProg1 {
+
+	public static void main(String[] args) throws SQLException {
+		
+		PrintWriter pw;
+		try {
+			pw = new PrintWriter("test.txt");
+			pw.println("hello");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		
+		pw.close();
+
+	}
+}

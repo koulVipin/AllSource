@@ -1,0 +1,13 @@
+package com.vipin.main;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		
+		final String JDBC_DRIVER = "org.h2.Driver";
+		//private static final String DB_URL = "jdbc:h2:tcp://localhost/~/test";
+		//private static final String DB_URL = "jdbc:h2:tcp://localhost:9092/~/test";
+		static final String DB_URL = "jdbc:h2:tcp://localhost:7777/~/test";
+	}
+
+}

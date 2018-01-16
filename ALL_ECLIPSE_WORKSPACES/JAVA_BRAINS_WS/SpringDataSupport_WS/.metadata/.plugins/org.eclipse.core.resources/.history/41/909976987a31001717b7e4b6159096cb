@@ -1,0 +1,18 @@
+package com.vevaan.main;
+
+import com.sample.specification.*;
+import com.vipin.specification.impl.SpecificationImpl;
+
+public class MainApp {
+
+	public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+		
+		SampleSpecificationInterface ssi = null;
+		
+		ssi= (SampleSpecificationInterface) Class.forName("com.vipin.specification.impl.SpecificationImpl").newInstance();
+		
+		//ssi = new SpecificationImpl();
+		
+		System.out.println("Addition is " +ssi.add(10, 20));	
+	}
+}

@@ -1,0 +1,6 @@
+package com.vipin.cir;
+
+public class Circle {
+
+	private Center center;
+}

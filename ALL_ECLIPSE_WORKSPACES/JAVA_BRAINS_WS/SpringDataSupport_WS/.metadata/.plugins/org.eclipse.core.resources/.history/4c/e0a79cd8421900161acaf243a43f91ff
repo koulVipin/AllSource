@@ -1,0 +1,99 @@
+package com.vipin.entity;
+
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import javax.persistence.Column;
+import javax.persistence.ElementCollection;
+import javax.persistence.Embedded;
+import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="USER_DETAILS")
+public class UserInfo {
+
+	@EmbeddedId
+	UserID userID; // Object which acts as a primary key (composite primary key)
+	
+	@Embedded
+	@ElementCollection
+	Set<Address> addressList = new HashSet<Address>();
+	
+	@ElementCollection
+	List<String> test = new ArrayList<>();
+	
+	/*@Id
+	@Column(name="SSNID")
+	@Transient
+	private int ssn_id;*/
+	
+	@Column(name="FULLNAME")
+	private String full_name;
+	
+	
+	/*@Embedded
+	@AttributeOverrides({
+	@AttributeOverride(name = "addressLine1", column = @Column(name = "HOME_ADDRESSLINE1")),
+	@AttributeOverride(name = "pinCode", column = @Column(name = "HOME_PINCODE"))
+	})
+	private Address home_address;
+	
+	@Embedded
+	@AttributeOverrides({
+	@AttributeOverride(name = "addressLine1", column = @Column(name = "OFFICE_ADDRESSLINE1")),
+	@AttributeOverride(name = "pinCode", column = @Column(name = "OFFICE_PINCODE"))
+	})
+	private Address office_address;*/
+	
+	public Set<Address> getAddressList() {
+		return addressList;
+	}
+	public void setAddressList(Set<Address> addressList) {
+		this.addressList = addressList;
+	}
+	
+	public UserID getUserID() {
+		return userID;
+	}
+	
+	public void setUserID(UserID userID) {
+		this.userID = userID;
+	}
+	
+	/*public int getSsn_id() {
+		return ssn_id;
+	}
+	public void setSsn_id(int ssn_id) {
+		this.ssn_id = ssn_id;
+	}*/
+	
+	public String getFull_name() {
+		return full_name;
+	}
+	public void setFull_name(String full_name) {
+		this.full_name = full_name;
+	}
+	
+	/*public Address getHome_address() {
+		return home_address;
+	}
+	public void setHome_address(Address home_address) {
+		this.home_address = home_address;
+	}
+	public Address getOffice_address() {
+		return office_address;
+	}
+	public void setOffice_address(Address office_address) {
+		this.office_address = office_address;
+	}
+	@Override
+	public String toString() {
+		return "UserInfo [userID=" + userID + ", full_name=" + full_name + ", city_loc=" + city_loc + ", home_address="
+				+ home_address + ", office_address=" + office_address + "]";
+	}*/
+}

@@ -1,0 +1,10 @@
+package com.vipin.exception;
+
+public class FinalizeProg {
+
+	public void finalize() {
+		
+	}
+	
+	
+}

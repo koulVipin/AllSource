@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Sat Dec 12 08:46:16 IST 2015
+org.eclipse.jst.jee.server\:SimpleSOAPExampleClient=C\:\\AllTechStuff\\APACHE_TOMCAT\\apache-tomcat-7.0.65\\apache-tomcat-7.0.65\\wtpwebapps\\SimpleSOAPExampleClient
+org.eclipse.jst.jee.server\:SimpleSOAPExample=C\:\\AllTechStuff\\APACHE_TOMCAT\\apache-tomcat-7.0.65\\apache-tomcat-7.0.65\\wtpwebapps\\SimpleSOAPExample
+org.eclipse.jst.jee.server\:TestDynamicWebProject=C\:\\AllTechStuff\\APACHE_TOMCAT\\apache-tomcat-7.0.65\\apache-tomcat-7.0.65\\wtpwebapps\\TestDynamicWebProject

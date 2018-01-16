@@ -1,0 +1,16 @@
+package com.vipin;
+
+import java.util.LinkedList;
+
+public class LinkedListDemo {
+	
+	public static void main(String[] args) {
+		
+		LinkedList<Integer> lle = new LinkedList<>();
+		
+		lle.add(new Integer(1));
+		
+		System.out.println(lle);
+	}
+
+}

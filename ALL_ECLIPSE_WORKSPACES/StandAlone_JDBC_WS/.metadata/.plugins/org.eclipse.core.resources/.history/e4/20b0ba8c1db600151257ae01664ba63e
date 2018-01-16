@@ -1,0 +1,23 @@
+package com.vipin.main;
+
+import java.sql.Connection;
+import java.sql.Statement;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		
+		final String JDBC_DRIVER = "org.h2.Driver";
+		//private static final String DB_URL = "jdbc:h2:tcp://localhost/~/test";
+		//private static final String DB_URL = "jdbc:h2:tcp://localhost:9092/~/test";
+		final String DB_URL = "jdbc:h2:tcp://localhost:7777/~/test";
+		
+		//Database credentials
+		final String USER = "sa";
+		final String PASS = "";
+		
+		Connection conn = null;
+		Statement stmt = null;
+	}
+
+}

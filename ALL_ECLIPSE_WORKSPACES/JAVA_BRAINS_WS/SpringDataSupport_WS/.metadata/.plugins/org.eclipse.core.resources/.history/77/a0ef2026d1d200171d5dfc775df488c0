@@ -1,0 +1,26 @@
+package com.vipin;
+
+import java.util.List;
+import java.util.ArrayList;
+
+import java.util.Collections;
+
+public class First {
+
+	public static void main(String s[]) {
+		
+		List<String> listString = new ArrayList<String> ();
+		
+		listString.add("Second");
+		listString.add("Third");
+		listString.add("First");
+		
+		System.out.println("Before sorting using Collections utility class, the list is");
+		System.out.print(listString);
+		
+		Collections.sort(listString);
+		
+		System.out.println("The sort list is " + listString);
+	}
+	
+}

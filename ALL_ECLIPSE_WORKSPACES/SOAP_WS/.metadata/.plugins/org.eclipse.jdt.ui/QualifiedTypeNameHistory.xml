@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.vipin.soap.impl.HelloWorldImpl"/>
+<fullyQualifiedTypeName name="com.vipin.soap.HelloWorld"/>
+<fullyQualifiedTypeName name="com.vipin.soap.impl.HelloWorldImplService"/>
+<fullyQualifiedTypeName name="javax.jws.WebService"/>
+<fullyQualifiedTypeName name="javax.jws.WebMethod"/>
+<fullyQualifiedTypeName name="net.webservicex.Country"/>
+<fullyQualifiedTypeName name="net.webservicex.CountrySoap"/>
+</qualifiedTypeNameHistroy>
